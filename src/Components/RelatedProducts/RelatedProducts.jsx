@@ -1,14 +1,14 @@
-import "./NewCollections.css";
-import new_collection from "../Assets/Assets/Frontend_Assets/new_collections";
+import "./RelatedProducts.css";
+import data_product from "../Assets/Assets/Frontend_Assets/data";
 import Item from "../Item/Item";
 
-function NewCollections() {
+function RelatedProducts() {
   return (
-    <div className="new-collections">
-      <h1>NEW COLLECTIONS</h1>
+    <div className="relatedproducts">
+      <h1>Related Products</h1>
       <hr />
-      <div className="collections">
-        {new_collection.map((item, i) => {
+      <div className="relatedproducts-item">
+        {data_product.map((item, i) => {
           return (
             <Item
               key={i}
@@ -25,4 +25,4 @@ function NewCollections() {
   );
 }
 
-export default NewCollections;
+export default RelatedProducts;
